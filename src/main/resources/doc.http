@@ -1,0 +1,31 @@
+GET http://localhost:8080/api/document
+Accept: application/json
+
+###
+POST http://localhost:8080/api/document
+Content-Type: application/json
+
+{
+  "name": "document name",
+  "description": "document description",
+  "url": "document url",
+  "type": "document type",
+  "folderId": 11
+}
+
+###
+PUT http://localhost:8080/api/document
+Content-Type: application/json
+
+{
+  "id": 5,
+  "name": "my document",
+  "description": "my document description",
+  "url": "my document url",
+  "type": "my document type",
+  "folderId": 11
+}
+
+###
+DELETE http://localhost:8080/api/document/4
+Accept: application/json

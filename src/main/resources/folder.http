@@ -1,0 +1,29 @@
+GET http://localhost:8080/api/folder
+Accept: application/json
+
+###
+POST http://localhost:8080/api/folder
+Content-Type: application/json
+
+{
+  "name": "My documents",
+  "description": "Folder description",
+  "color": "WHITE",
+  "parentId": 11
+}
+
+###
+PUT http://localhost:8080/api/folder
+Content-Type: application/json
+
+{
+  "id": 11,
+  "name": "my folder",
+  "description": "my folder description",
+  "color": "BLACK",
+  "parentId": null
+}
+
+###
+DELETE http://localhost:8080/api/folder/11
+Accept: application/json
